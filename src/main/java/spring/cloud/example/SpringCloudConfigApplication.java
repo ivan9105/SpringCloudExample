@@ -20,8 +20,8 @@ public class SpringCloudConfigApplication {
 	private YAMLConfig yamlConfig;
 
 	@RequestMapping("/")
-	public String defConfig() {
-		return "Test: " /*yamlConfig.getConfig().getName() + "\n"*/;
+	public String def() {
+		return "";
 	}
 
 	public static void main(String[] args) {
