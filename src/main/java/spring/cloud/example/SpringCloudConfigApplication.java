@@ -7,7 +7,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import spring.cloud.example.config.YAMLConfig;
 
@@ -20,11 +19,6 @@ import spring.cloud.example.config.YAMLConfig;
 public class SpringCloudConfigApplication {
 	@Autowired
 	private YAMLConfig yamlConfig;
-
-	@RequestMapping("/")
-	public String def() { //Todo auto generate configs and make in my repository
-		return "";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudConfigApplication.class, args);
