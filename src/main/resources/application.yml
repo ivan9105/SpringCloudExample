@@ -20,7 +20,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-samples/config-repo
+          uri: https://github.com/ivan9105/spring-config-sample
           basedir: target/config
 ---
 spring:
