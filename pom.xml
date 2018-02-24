@@ -90,6 +90,11 @@
 			<artifactId>rabbitmq-client</artifactId>
 			<version>1.3.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<version>1.3.3.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
@@ -136,6 +141,11 @@
 			<id>ampq.client</id>
 			<name>ampq client</name>
 			<url>https://mvnrepository.com/artifact/com.rabbitmq/amqp-client</url>
+		</repository>
+		<repository>
+			<id>org.spring.cloud.amqp</id>
+			<name>spring boot amqp</name>
+			<url>https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-amqp</url>
 		</repository>
 	</repositories>
 
